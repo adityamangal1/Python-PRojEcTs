@@ -1,6 +1,5 @@
 from win32com.client import Dispatch
 
-
 class library:
 
     def __init__(self, list, name):
