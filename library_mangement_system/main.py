@@ -1,3 +1,12 @@
+'''
+Author: Aditya Mangal 
+Date:  16 september,2020
+Purpose: python mini project
+
+'''
+
+
+
 from win32com.client import Dispatch
 
 class library:

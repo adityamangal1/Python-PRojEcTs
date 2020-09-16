@@ -1,3 +1,10 @@
+
+'''
+Author: Aditya Mangal 
+Date:  18 september,2020
+Purpose: python mini project
+
+'''
 import requests
 import json
 

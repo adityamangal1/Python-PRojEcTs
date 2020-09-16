@@ -1,3 +1,9 @@
+'''
+Author: Aditya Mangal 
+Date:  20 september,2020
+Purpose: python practise problem
+
+'''
 def number_guess(num_of_guesses, num):
 
     while(num_of_guesses != 9):
