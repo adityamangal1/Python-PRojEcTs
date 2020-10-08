@@ -4,4 +4,5 @@
  </p> 
 <p align="center"><img src="https://img.shields.io/badge/Author-adityamangal1-green.svg"> 
 </p>
- ![library-management-system-python-project](https://user-images.githubusercontent.com/68494604/92790196-2f8d8000-f3c9-11ea-8767-c3746058babb.jpg)
+
+![library-management-system-python-project](https://user-images.githubusercontent.com/68494604/92790196-2f8d8000-f3c9-11ea-8767-c3746058babb.jpg)
