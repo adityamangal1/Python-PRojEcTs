@@ -49,7 +49,7 @@ def lock_data():
 
         if user_input_lock is 1:
 
-            diet_data_harry = input(
+            diet_data_user1 = input(
                 "Enter the diet you want to lock for Harry.\n")
             with open("user1_diet.txt", 'a') as f:
                 f.write(f"{diet_data_user1} ate at {datetime.datetime.now()}\n")
