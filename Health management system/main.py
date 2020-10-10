@@ -2,9 +2,9 @@ import datetime
 
 
 def lock_data():
-    user1_name = input()
-    user2_name = input()
-    user3_name = input()
+    user1_name = input('Enter the name of first user\n')
+    user2_name = input('Enter the name of secound user\n')
+    user3_name = input('Enter the name of third user')
     user_inp = int(input("Press 1 to lock Exercise or 2 for lock Diet.\n"))
     if user_inp is 1:
         user_input_exercise = int(input(
@@ -12,30 +12,30 @@ def lock_data():
             f"press 1 to lock Exercise of {user1_name}.\npress 2 to lock Exercise of {user2_name}.\npress 3 to lock Exercise of {user3_name}.\n"))
 
         if user_input_exercise is 1:
-            exercise_data_harry = input(
+            exercise_data_user1 = input(
                 f"Enter the Exercise you want to lock for {user1_name}.\n")
-            with open("harry_exercise.txt", 'a') as f:
+            with open(f"{user1_name}_exercise.txt", 'a') as f:
                 f.write(
-                    f"{exercise_data_harry} Done at {datetime.datetime.now()}\n")
+                    f"{exercise_data_user1} Done at {datetime.datetime.now()}\n")
                 print("Exercise locked successfully\n")
 
         elif user_input_exercise is 2:
-            exercise_data_aditya = input(
+            exercise_data_user2 = input(
                 f"Enter the Exercise you want to lock for {user2_name}.\n")
 
             with open(f"{user2_name}_exercise.txt", 'a') as alfa:
 
                 alfa.write(
-                    f"{exercise_data_aditya} Done at {datetime.datetime.now()}\n")
+                    f"{exercise_data_user2} Done at {datetime.datetime.now()}\n")
 
                 print("Exercise locked successfully.\n")
 
         elif user_input_exercise is 3:
-            exercise_data_mangal = input(
+            exercise_data_user3 = input(
                 f"Enter the exercise you want to lock for {user3_name}.\n")
-            with open("mangal_exercise.txt", 'a') as file:
+            with open(f"{user3_name}_exercise.txt", 'a') as file:
                 file.write(
-                    f"{exercise_data_mangal} Done at {datetime.datetime.now()}\n")
+                    f"{exercise_data_user3} Done at {datetime.datetime.now()}\n")
 
                 print("Exercise locked successfully\n")
 
@@ -63,13 +63,13 @@ def lock_data():
                     f"{diet_data_user2} ate at {datetime.datetime.now()}\n")
                 print("Diet locked successfully\n")
         elif user_input_lock is 3:
-            diet_data_user2 = input(
+            diet_data_user3 = input(
 
                 f"Enter the diet you want to lock for {user3_name}.\n")
 
             with open("user3_diet.txt", 'a') as file:
                 file.write(
-                    f"{diet_data_user2} ate at {datetime.datetime.now()}\n")
+                    f"{diet_data_user3} ate at {datetime.datetime.now()}\n")
                 print("Diet locked successfully\n")
 
         else:
