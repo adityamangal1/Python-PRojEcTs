@@ -8,6 +8,17 @@ This repository contains some various interesting mini-projects using the python
 </p>
 
 ![Python-Projects-1](https://user-images.githubusercontent.com/68494604/93393532-50a21500-f890-11ea-8bf8-556eff7fb6b1.jpg)
+
+<p align="center">
+  Follow Me On
+</p>
+<p align="center">
+  <a href="https://www.instagram.com/adityamangal/">
+    <img src="http://clipart-library.com/images_k/instagram-png-transparent/instagram-png-transparent-16.png" width="40" height="40">
+    </a>
+</p>
+
+
 ## Steps To Follow
 - Select or create an issue and ask to be *assigned* to it.
 - Check existing scripts.
