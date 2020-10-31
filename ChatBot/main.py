@@ -14,7 +14,7 @@ trainer.train('chatterbot.corpus.english')
 
 
 print('\t\t\t A Chatot')
-print('Type enrollment forms to enroll otherwise continue to talk with ChatBot')
+
 print('You can exit by type exit\n')
 while True:
     query = input(">> ")
