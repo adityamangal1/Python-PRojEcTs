@@ -4,6 +4,8 @@ Date:  20 september,2020
 Purpose: python practise problem
 
 '''
+from termcolor import cprint
+
 def number_guess(num_of_guesses, num):
 
     while(num_of_guesses != 9):
@@ -46,10 +48,12 @@ def restart_game():
     else:
 
         print("THANK YOU FOR PLAYING!!\nCOME BACK SOON.")
+if __name__ == "__main__":
+    cprint("#" * 50, "magenta")
+    cprint((f"NUMBER GUESSING QUIZ ").center(50), "yellow")
+    cprint("#" * 50, "magenta")
+    print("\t\t\t  --TO WIN THIS YOU HAVE ONLY 9 LIFES-- ")
+    num = 30
+    num_of_guesses = 0
+    number_guess(num_of_guesses, num)
 
-
-print("\tWELCOME BUDDY!!\n\t\t\t*****THIS IS A NUMBER GUESSING QUIZ*****\t\t\t\t")
-print("\t\t\t  --TO WIN THIS YOU HAVE ONLY 9 LIFES-- ")
-num = 30
-num_of_guesses = 0
-number_guess(num_of_guesses, num)
