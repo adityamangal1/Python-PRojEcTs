@@ -7,6 +7,7 @@ Purpose: python mini project
 '''
 import time
 import os
+from termcolor import cprint
 from win32com.client import Dispatch
 
 
@@ -27,6 +28,11 @@ def find_binod(filename):
 
 
 if __name__ == "__main__":
+    # __version__ = "1.0.0"
+
+    cprint("#" * 50, "magenta")
+    cprint((f"News Reader Project ").center(50), "yellow")
+    cprint("#" * 50, "magenta")
     speak = Dispatch('SAPI.spvoice')
     speak.speak('it is a Binod detector')
     file_path = input('Enter the full path of directory.\n')
