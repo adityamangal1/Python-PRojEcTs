@@ -1,4 +1,5 @@
 import datetime
+from termcolor import cprint
 
 
 def lock_data():
@@ -119,15 +120,18 @@ def again_retrieve():
         print("\t\t Thank You!")
 
 
-print("\t\t **Health Mangaement System**\t\t")
-user_input = int(input(
-    "What you want to do. Lock data or retrieve data?\nPress 1 to lock and 2 for retrieve.\n"))
+if __name__ == "__main__":
+    cprint("#" * 50, "magenta")
+    cprint((f"Health Mangaement System ").center(50), "yellow")
+    cprint("#" * 50, "magenta")
+    user_input = int(input(
+        "What you want to do. Lock data or retrieve data?\nPress 1 to lock and 2 for retrieve.\n"))
 
-if user_input is 1:
-    lock_data()
+    if user_input is 1:
+        lock_data()
 
-elif user_input is 2:
-    retrieve()
+    elif user_input is 2:
+        retrieve()
 
-else:
-    print("Wrong input")
+    else:
+        print("Wrong input")
