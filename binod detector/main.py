@@ -31,7 +31,7 @@ if __name__ == "__main__":
     # __version__ = "1.0.0"
 
     cprint("#" * 50, "magenta")
-    cprint((f"News Reader Project ").center(50), "yellow")
+    cprint((f"Binod detector ").center(50), "yellow")
     cprint("#" * 50, "magenta")
     speak = Dispatch('SAPI.spvoice')
     speak.speak('it is a Binod detector')
