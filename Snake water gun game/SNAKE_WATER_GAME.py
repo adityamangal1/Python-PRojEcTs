@@ -1,5 +1,6 @@
+from win32com.client import Dispatch
 import random
-
+from termcolor import cprint
 
 def game():
 
@@ -83,9 +84,14 @@ def again_play():
         print("Wrong input.Please type 'y' or 'n' only.")
         again_play()
 
-from win32com.client import Dispatch
-adi = Dispatch("SAPI.spvoice")
-adi.speak("Welcome to snake water gun game")
-print("\t\t\t****SNAKE WATER GUN GAME****\t\t\t")
-print("WELCOME!")
-game()
+if __name__ == "__main__":
+    adi = Dispatch("SAPI.spvoice")
+    adi.speak("Welcome to snake water gun game")
+    cprint("#" * 50, "magenta")
+    cprint((f"SNAKE WATER GUN GAME ").center(50), "yellow")
+    cprint("#" * 50, "magenta")
+    print("WELCOME!")
+    game()
+
+    
+
