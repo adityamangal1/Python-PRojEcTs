@@ -21,6 +21,7 @@ This repository contains some various interesting mini-projects using the python
 
 ![Python-Projects-1](https://user-images.githubusercontent.com/68494604/93393532-50a21500-f890-11ea-8bf8-556eff7fb6b1.jpg)
 
+![source](https://user-images.githubusercontent.com/68494604/94645884-950ac780-030a-11eb-9c8f-40d9740fc6ad.gif)
 
 ## Steps To Follow
 - Select or create an issue and ask to be *assigned* to it.
@@ -75,7 +76,7 @@ This repository contains some various interesting mini-projects using the python
 
 <img src="https://github-readme-stats.vercel.app/api?username=adityamangal1&&show_icons=true&title_color=ffffff&icon_color=bb2acf&text_color=daf7dc&bg_color=ffba2c">
 
-![119813](https://user-images.githubusercontent.com/69212320/91600995-550a9a80-e982-11ea-9001-f84a7552967e.gif)
+
 <p align="center">
   <img alt="Sloan, the sloth mascot" width="250px" src="https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/31047/af153cd6-9994-4a68-83f4-8ddf3e13f0bf.jpg">
   <br>
