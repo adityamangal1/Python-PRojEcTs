@@ -1,7 +1,7 @@
 # Python-mini-projects
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 
-This repository contains some various interesting mini-projects using the python programming language.Trying to work on Python projects would definitely uplift your skills and build up your profile to face the competitive world outside.Projects offer you a promising way to kick-start your career in this field.This language really deserves hype in today’s era and why not if it can solve a lot of real-world problems.
+This repository contains some various interesting mini-projects using the python programming language.Trying to work on Python projects would definitely uplift your skills and build up your profile to face the competitive world outside.Projects offer you a promising way to kick start your career in this field.This language really deserves hype in today’s era and why not if it can solve a lot of real-world problems.
 
 </p> 
 <p align="center"><img src="https://img.shields.io/badge/Author-adityamangal-green.svg"> 
