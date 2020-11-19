@@ -7,8 +7,6 @@ This repository contains some various interesting mini-projects using the python
 <p align="center"><img src="https://img.shields.io/badge/Author-adityamangal-green.svg"> 
 </p>
 
-
-
 <p align="center">
   Follow Me On
 </p>
