@@ -16,7 +16,6 @@ This repository contains some various interesting mini-projects using the python
     </a>
 </p>
 
-
 ![Python-Projects-1](https://user-images.githubusercontent.com/68494604/93393532-50a21500-f890-11ea-8bf8-556eff7fb6b1.jpg)
 
 ![source](https://user-images.githubusercontent.com/68494604/94645884-950ac780-030a-11eb-9c8f-40d9740fc6ad.gif)
