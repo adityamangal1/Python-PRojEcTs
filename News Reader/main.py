@@ -18,7 +18,7 @@ def speak(str):
 
 if __name__ == "__main__":
     cprint("#" * 50, "magenta")
-    cprint((f"Health Mangaement System ").center(50), "yellow")
+    cprint((f"Latest news reader ").center(50), "yellow")
     cprint("#" * 50, "magenta"
     speak("good morning")
     url = "http://newsapi.org/v2/everything?q=bitcoin&from=2020-08-07&sortBy=publishedAt&apiKey=e684369eea9446d19026cf7281f207c9"
