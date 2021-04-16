@@ -1,12 +1,3 @@
-import math
-
-print(math.factorial(5))
-# print(math.pow(2,4))
-
-<<<<<<< HEAD
-import im
-=======
-'''
 import requests
 import json
 from termcolor import cprint
@@ -21,7 +12,7 @@ def speak(str):
 if __name__ == "__main__":
     cprint("#" * 50, "magenta")
     cprint((f"Latest news reader ").center(50), "yellow")
-    cprint("#" * 50, "magenta"
+    cprint("#" * 50, "magenta")
     speak("good morning")
     url = "http://newsapi.org/v2/everything?q=bitcoin&from=2020-08-07&sortBy=publishedAt&apiKey=e684369eea9446d19026cf7281f207c9"
     news = requests.get(url).text
@@ -37,4 +28,3 @@ if __name__ == "__main__":
 
 speak("thank you for listening")
 print("\t\tThank you for listening..")
->>>>>>> b9daee9c68138fcb103d54c475030a1f17064716
