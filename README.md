@@ -74,6 +74,8 @@ This repository contains some various interesting mini-projects using the python
 
 <img src="https://github-readme-stats.vercel.app/api?username=adityamangal1&&show_icons=true&title_color=ffffff&icon_color=bb2acf&text_color=daf7dc&bg_color=ffba2c">
 
+![68747470733a2f2f692e696d6775722e636f6d2f646b31494737322e676966](https://user-images.githubusercontent.com/68494604/116209755-d90a6180-a75f-11eb-92ef-650bd533e0da.gif)
+
 <p align="center">
   <img alt="Sloan, the sloth mascot" width="250px" src="https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/31047/af153cd6-9994-4a68-83f4-8ddf3e13f0bf.jpg">
   <br>
