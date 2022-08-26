@@ -1,96 +1,75 @@
 from win32com.client import Dispatch
 import random
+
 from termcolor import cprint
 
 
-def game():
+class game:
 
-    chances = 0
-    opp_win = 0
-    user_win = 0
+    def __init__(self):
+        self.chances = 0
+        self.opp_win = 0
+        self.user_win = 0
+        self.user = ''
+        self.opp = ''
 
-    while (chances != 10):
+    def draw(self, user, opp):
+        print("Oops!!\nMatch draw")
+        print("You chooses", user, "And your opponent chooses", opp)
+        self.chances += 1
 
-        adi = ['s', 'w', 'g']
-        opp = random.choice(adi)
+    def win(self, user, opp):
+        print(f"Hurray\nYou win!")
+        print(f"You chooses {user} And your opponent chooses {opp}")
+        self.user_win += 1
+        self.chances += 1
 
-        user = input("Enter 's' for Snake, 'w' for Water and 'g' for Gun.\n")
+    def lose(self, user, opp):
+        print(f"You Loose!!\t\tDont worry, try again.")
+        print(f"You chooses {user} And your opponent chooses {opp}")
+        self.chances += 1
+        self.opp_win += 1
 
-        if user == opp:
-            print("Oops!!\nMatch draw")
-            print("You chooses", user, "And your opponent chooses", opp)
-            chances += 1
+    def finalScore(self):
+        print(f"Your final score is:- {self.user_win}\nYour opponent score :-  {self.opp_win}")
+        print("Hope you enjoyed!\nCome soon!!")
 
-        if user == 's' and opp == 'w':
-            print("HURRAY!!")
-            print("You win!")
-            print("You chooses", user, "And your opponent chooses", opp)
-            user_win += 1
-            chances += 1
+    def run(self):
+        while self.chances != 10:
 
-        elif user == 'w' and opp == 's':
+            adi = ['s', 'w', 'g']
+            self.opp = random.choice(adi)
 
-            print("You Loose!")
-            print("\t\tDont worry, try again.")
-            print("You chooses", user, "And your opponent chooses", opp)
-            chances += 1
-            opp_win += 1
+            self.user = input("Enter 's' for Snake, 'w' for Water and 'g' for Gun.\n")
 
-        if user == 'g' and opp == 'w':
+            if self.user == self.opp:
+                self.draw(self.user, self.opp)
 
-            print("You Loose!!")
-            print("\t\tDont worry, try again.")
-            print("You chooses", user, "And your opponent chooses", opp)
-            chances += 1
-            opp_win += 1
+            if (self.user == 's' and self.opp == 'w') or (self.user == 'g' and self.opp == 's') or (self.user == 'w' and self.opp == 'g'):
+                self.win(self.user, self.opp)
 
-        elif user == 'w' and opp == 'g':
+            elif (self.user == 'w' and self.opp == 's') or (self.user == 'g' and self.opp == 'w') or (self.user == 's' and self.opp == 'g'):
+                self.lose(self.user, self.opp)
 
-            print("HURRAY!!")
-            print("You win!")
-            print("You chooses", user, "And your opponent chooses", opp)
-            user_win += 1
-            chances += 1
+        self.finalScore()
+        self.again_play()
 
-        if user == 's' and opp == 'g':
-
-            print("You Loose!!")
-            print("\t\tDont worry, try again.")
-            print("You chooses", user, "And your opponent chooses", opp)
-            chances += 1
-            opp_win += 1
-
-        elif user == 'g' and opp == 's':
-            print("HURRAY!!")
-            print("You win!")
-            print("You chooses", user, "And your opponent chooses", opp)
-            user_win += 1
-            chances += 1
-
-    print("Your final score is:-", user_win,
-          "Your opponent score :-", opp_win)
-    print("Hope you enjoyed!\nCome soon!!")
-    again_play()
-
-
-def again_play():
-
-    play_again = input(
-        "\t\t\tWant to play again?\nEnter 'y' for Yes and 'n' for No.\n")
-    if play_again == 'y':
-        game()
-    elif play_again == 'n':
-        print("\t\t*Thank You*!!\nCome Back Soon!")
-    else:
-        print("Wrong input.Please type 'y' or 'n' only.")
-        again_play()
+    def again_play(self):
+        play_again = input(
+            "\t\t\tWant to play again?\nEnter 'y' for Yes and 'N' for No.\n")
+        if play_again == 'y':
+            game()
+        elif play_again == 'N':
+            print("\t\t*Thank You*!!\nCome Back Soon!")
+        else:
+            print("Wrong input.Please type 'y' or 'n' only.")
+            self.again_play()
 
 
 if __name__ == "__main__":
-    adi = Dispatch("SAPI.spvoice")
-    adi.speak("This is a snake water gun game")
     cprint("#" * 50, "magenta")
-    cprint((f"SNAKE WATER GUN GAME ").center(50), "yellow")
+    cprint(f"SNAKE WATER GUN GAME ".center(50), "yellow")
     cprint("#" * 50, "magenta")
     print("WELCOME!")
-    game()
+    gm = game()
+    gm.run()
